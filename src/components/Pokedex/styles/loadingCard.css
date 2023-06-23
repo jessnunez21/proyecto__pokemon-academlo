@@ -1,0 +1,36 @@
+
+
+.container_loading{
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+    z-index: 10000;
+ } 
+ .loading{
+    border: 10px solid #e7dbdb;
+    border-top-color: #9185cb ;
+    border-top-style: groove;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   position: absolute;
+ 
+   margin: auto;
+   animation: animationLoading 1.2s linear infinite;
+   box-shadow: rgba(158, 155, 155, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgb(41, 21, 192) 0px -3px 5px;
+}
+
+ @keyframes animationLoading{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+ }

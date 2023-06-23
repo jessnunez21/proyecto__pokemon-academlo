@@ -1,0 +1,175 @@
+
+.header{
+    position: relative;
+    height:150px;
+    max-width: 1800px;
+    background-color: white;
+   
+}
+.header__hijo1{
+    position: absolute;
+    top: 4.5em;
+    right: 6em;
+    display: inline-block;
+   
+}
+.header__hijo2{
+    position: absolute;
+    top: 2.7em;
+    left: 6em;
+    display: inline-block;
+  
+}
+.header__img{
+  position: absolute;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__pokebola{
+   
+    top: 4em;
+    width: 100px;
+    right: 6em;
+   
+}
+.header__logo{
+   
+    top: 2.5em;
+    width: 300px;
+    left: 8em;
+
+}
+
+.header__section{
+    background-color: #fff;
+}
+
+.header__title{
+    
+    font-weight: 500;
+    padding:  2em 0 1em;
+    text-align: center;
+}
+.header__name{
+    color: red;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.section__option{
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+    align-items: center;
+    padding-bottom: 3em;
+    justify-content: center;
+}
+.header__input{
+    font-size: 1.5rem;
+    padding: 0.2em 0;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 0.3em 0 0 0.3em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.header__btn{
+    font-size: 1.5rem;
+    padding: 0.2em 1.5em;
+    color: aliceblue;
+    background-color: red;
+    border: none;
+    border-radius: 0 0.3em 0.3em 0;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.section__select{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
+    display: inline-block;
+
+	cursor: pointer;
+  	
+  	padding: 0.6em 1.5em;
+  	outline: 0; 
+  
+    border-radius: 0.3em ;
+	
+	color: #7b7b7b;
+	font-size: 1rem;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+    
+}
+
+
+@media (max-width:461px) {
+    .section__option{
+       display: grid;
+       grid-template-columns: repeat(3 1fr);
+       gap: 1em;
+       padding: 0 1em;
+        
+    }
+    .header__form{
+        display: flex;
+       
+    }
+    .header__input{
+        font-size: 1rem;
+        
+    }
+    .header__btn{
+        font-size: 1.3rem;
+        
+    }
+    .section__select{
+        padding: 0.5 1em;
+    }
+    .header__pokebola{
+        position: absolute;
+        top: 1em;
+        width: 80px;
+        right: -3em;
+        display: none;
+       
+    }
+    .header__logo{
+        position: absolute;
+        top: 0.2em;
+        width: 260px;
+        left: -3em;
+       
+    
+    }
+}
+@media (max-width:680px) {
+    .section__option{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media (max-width:800px) {
+    .header__pokebola{
+        position: absolute;
+        top: 1em;
+        width: 80px;
+        right: -3em;
+       
+    }
+    .header__logo{
+        position: absolute;
+        top: 0.2em;
+        width: 290px;
+        left: -3em;
+    
+    }
+}
+
+

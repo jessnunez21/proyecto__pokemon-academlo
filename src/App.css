@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+body{
+    background-color: #E5E5E5; 
+}
+
+body::-webkit-scrollbar {
+    width: 10px;     /* Tamaño del scroll en vertical */
+    height: 10px;    /* Tamaño del scroll en horizontal */
+    
+ }
+ body::-webkit-scrollbar-thumb {
+    background: red;
+   border-radius: 10px;
+ }
+ 
+
+ 
+ /* Cambiamos el fondo cuando esté en active */
+ body::-webkit-scrollbar-thumb:active {
+    background-color: #231e1e;
+ }
+ /* Ponemos un color de fondo y redondeamos las esquinas del track */
+ body::-webkit-scrollbar-track {
+    background: #e9d1d1;
+    border-radius: 4px;
+ }
+ 
+ .bg{
+    width: 450px;
+    height: 225px;
+    border: 2px solid red;
+ }

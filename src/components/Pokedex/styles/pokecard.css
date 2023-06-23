@@ -1,0 +1,211 @@
+
+
+
+.pokemons__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    
+    border-radius: 1em;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #E5E5E5;
+    padding: 2em;
+    
+
+}
+.pokecard{
+   border: 0.5em solid currentColor;
+   background-color: #fffcfc;
+    border-radius: 0.8em;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    cursor: pointer;
+}
+
+.pokecard__header{
+    aspect-ratio: 2;
+    position: relative;
+    background-color: currentColor
+}
+.pokecard__img{
+    position: absolute;
+    width: 65%;
+    bottom: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: filter 0.5s;
+}
+.pokecard__img:hover {
+    filter: drop-shadow(0 0 2em rgb(188, 187, 174));
+  }
+ 
+.pokecard__body{
+    padding-top: 3em;
+}
+.pokecard__name{
+    text-align: center;
+    text-transform: capitalize;
+}
+.pokecard__type{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    color: black;
+}
+.pokecard__type-items{
+    text-transform: capitalize;
+    position: relative;
+    
+   
+}
+
+.pokecard__type-items::before{
+    content: '/';
+    position: absolute;
+    left: -1em;
+}
+.pokecard__type-items:first-child::before{
+    content: '';
+}
+ .pokecard__type{
+    list-style: none;
+    
+} 
+.pokecard__stats{
+   list-style: none;
+   padding: 1em;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   justify-items: center;
+   gap: 1em ;
+
+}
+.pokecard__stats-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+    justify-content: space-between;
+   
+    
+}
+.pokecard__stats-label{
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+   text-align: center;
+   color: black;
+}
+.pokecard__stats-value{
+    font-size: 1.1rem;
+}
+.fighting{
+ color: rgba(109,96,39,1);
+}
+.bg-fighting{
+    background: linear-gradient(180deg, rgba(109,96,39,1) 0%, rgba(211,203,184,1) 93%);
+}
+.flying{
+    color: rgba(48,48,48,1);
+}
+.bg-flying{
+    background: linear-gradient(180deg, rgba(48,48,48,1) 0%, rgba(182,107,58,1) 30%, rgba(199,172,21,1) 93%);
+}
+.poison{
+ color: rgba(58,69,58,1);
+}
+.bg-poison{
+    background: linear-gradient(180deg, rgba(58,69,58,1) 0%, rgba(182,174,58,1) 30%, rgba(212,210,141,1) 100%);
+}
+.ground{
+ color: rgba(19,80,88,1);
+}
+.bg-ground{
+    background: linear-gradient(180deg, rgba(19,80,88,1) 0%, rgba(241,242,181,1) 93%);
+}
+.rock{
+ color: rgba(99,99,99,1);
+}
+.bg-rock{
+    background: linear-gradient(180deg, rgba(99,99,99,1) 0%, rgba(162,171,88,1) 93%);
+}
+.bug{
+ color: rgba(30,19,12,1);
+}
+.bg-bug{
+    background: linear-gradient(180deg, rgba(30,19,12,1) 0%, rgba(154,132,120,1) 93%);
+}
+.ghost{
+ color: rgba(31,28,44,1);
+}
+.bg-ghost{
+    background: linear-gradient(180deg, rgba(31,28,44,1) 0%, rgba(146,141,173,1) 93%);
+}
+.steel{
+ color: rgba(26,41,128,1);
+}
+.bg-steel{
+    background: linear-gradient(180deg, rgba(26,41,128,1) 0%, rgba(38,208,206,1) 93%);
+}
+.fire{
+ color: rgba(194,21,0,1);
+}
+.bg-fire{
+    background: linear-gradient(180deg, rgba(194,21,0,1) 0%, rgba(255,197,0,1) 93%);
+}
+.water{
+ color: rgba(0,4,40,1);
+}
+.bg-water{
+    background: linear-gradient(180deg, rgba(0,4,40,1) 0%, rgba(0,78,146,1) 93%);
+}
+.grass{
+  color: rgba(0,21,16,1);
+}
+.bg-grass{
+    background: linear-gradient(180deg, rgba(0,21,16,1) 0%, rgba(0,191,143,1) 93%);
+}
+
+.electric{
+ color: rgba(121,159,12,1);
+}
+.bg-electric{
+    background: linear-gradient(180deg, rgba(121,159,12,1) 0%, rgba(255,224,0,1) 93%);
+}
+.psychic{
+ color: #000000;
+}
+.bg-psychic{
+    background-image: linear-gradient(to bottom, #000000, #532623, #975420, #bb9900, #a8eb12);
+}
+.ice{
+     color: rgba(41,128,185,1);
+}
+.bg-ice{
+    background: linear-gradient(180deg, rgba(41,128,185,1) 0%, rgba(237,213,250,1) 81%, rgba(255,255,255,1) 93%);
+}
+.dragon{
+ color: rgba(120,2,6,1);
+}
+.bg-dragon{
+    background: linear-gradient(180deg, rgba(120,2,6,1) 0%, rgba(6,17,97,1) 93%);
+}
+.dark{
+ color: rgba(0,34,62,1);
+}
+.bg-dark{
+    background: linear-gradient(180deg, rgba(0,34,62,1) 0%, rgba(255,161,159,1) 93%);
+}
+.fairy{
+ color: rgba(24,24,24,1);
+}
+.bg-fairy{
+    background: linear-gradient(180deg, rgba(24,24,24,1) 0%, rgba(186,139,2,1) 93%);
+}
+.normal{
+    color: rgba(51,0,27,1) ;
+}
+.bg-normal{
+    background: linear-gradient(180deg, rgba(51,0,27,1) 0%, rgba(255,0,132,1) 93%);
+}
