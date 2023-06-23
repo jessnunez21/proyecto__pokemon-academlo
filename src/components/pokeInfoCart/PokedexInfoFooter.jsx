@@ -3,8 +3,8 @@ import React from 'react'
 
 const PokedexInfoFooter = ({pokemon}) => {
   return (
-    <div className='moves'> 
-        <h3 className='moves__title'>Movements</h3>
+    <div className="moves "> 
+        <h3 className='moves__title'><span>Movements </span> <span>{pokemon?.moves.length}</span></h3>
         <hr className='move__linea'/>
         <div className='move_cart'>
             <ul className='move__list'>
