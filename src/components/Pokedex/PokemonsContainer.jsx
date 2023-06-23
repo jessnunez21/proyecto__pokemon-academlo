@@ -1,5 +1,6 @@
 import React from 'react'
-import PokemonCarts from './pokemonCarts'
+import PokemonCarts from './PokemonCarts/PokemonsContainer.jsx'
+
 
 const PokemonsContainer = ({pokemons}) => {
  
