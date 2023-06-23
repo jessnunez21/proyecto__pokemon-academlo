@@ -2,7 +2,7 @@ import React from 'react'
 
 const ErrorInput = ({name}) => {
 
-   
+  
 
   return (
     <div className='cart__error'>

@@ -17,12 +17,13 @@ const navigate = useNavigate()
         })
         .catch(error => {setHasError(true)
         
-            // setTimeout(() => {
-            //     setHasError(false)
-            //      navigate(`/pokedex`)
-            // }, 3000);
+            setTimeout(() => {
+                setHasError(false)
+                 navigate(`/pokedex`)
+            }, 3000);
         })
     }
+    
    
     return [infoApi, getApi, hasError, setInfoApi]
 }
